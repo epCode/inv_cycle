@@ -28,8 +28,7 @@ local inv_size = INVLENGTH*INVHEIGHT
 controls.register_on_press(function(player, key)
 
   local ctrl = player:get_player_control()
-	if key == "zoom" and ctrl.sneak or key == "sneak" and ctrl.zoom or
-  key == "aux1" and ctrl.sneak or key == "sneak" and ctrl.aux1 then
+  if key == "aux1" and ctrl.sneak then
   else
     return
   end
